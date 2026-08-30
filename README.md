@@ -13,14 +13,20 @@ An AI-powered web app that generates customized day-by-day travel itineraries ba
 * **AI Engine:** Python & API
 
 ## Folder Structure
-Itinera/
-├── frontend/        # Input form & results display screens
-├── backend/         # Main server & weather service
-└── AI_engine/       # Itinerary generation logic
+* **Itinera/**
+  * **frontend/**
+    * `index.html` — Input screen
+    * `results.html` — Output screen
+    * `input.js` & `results.js` — Page button actions & data transfer
+    * `input.css` & `results.css` — Styling & design
+  * **backend/**
+    * `main.py` — Central Python server
+    * `weather_service.py` — Weather & location fetcher
+  * **AI_engine/**
+    * `planner.py` — AI prompt logic
 
-## 👥 Team Members
-* **Team Lead:** [@udsau]
-* **Frontend Team:** [@sSthisi], [@Kikii0911]
-* **Backend Team:** [@drishtirooj], [@Delxfy]
-* **AI Logic:** [@Out1xw]
-
+## Team Members
+* **Team Lead:** [Udita Sau](https://github.com/udsau)
+* **Frontend Team:** [Teammate 1](https://github.com/sSthisi), [Teammate 2](https://github.com/Kikii0911)
+* **Backend Team:** [Drishti Biman Rooj](https://github.com/drishtirooj), [Prachurya](https://github.com/Delxfy)
+* **AI Logic:** [Manav](https://github.com/Out1xw)
