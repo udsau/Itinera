@@ -8,8 +8,8 @@ An AI-powered web app that generates customized day-by-day travel itineraries ba
 * **Visual Cards:** Clean interface showing time slots, landmarks, and travel tips.
 
 ## Tech Stack
-* **Frontend:** HTML5, CSS, JavaScript
-* **Backend:** Python 
+* **Frontend:** HTML, CSS, JavaScript
+* **Backend:** Python,OpenWeatherMap API
 * **AI Engine:** Python & API
 
 ## Folder Structure
@@ -20,7 +20,7 @@ An AI-powered web app that generates customized day-by-day travel itineraries ba
     - `input.js` & `results.js`: Page button actions & data transfer
     - `input.css` & `results.css`: Styling & design
   * **backend/**
-    - `main.py` — Central Python server
+    - `main.py`: Central Python server
     - `weather_service.py`: Weather & location fetcher
   * **AI_engine/**
     - `planner.py`: AI prompt logic
