@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Itinera | Your Journey</title>
+
+
+    <!-- Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="results.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- Decorative Background -->
+
+    <div class="jali-pattern"></div>
+
+
+    <!-- =====================================
+         HERO SECTION
+    ====================================== -->
+
+    <header class="hero">
+
+
+        <nav class="navbar">
+
+            <div class="logo">
+                itin<span>e</span>ra
+            </div>
+
+        </nav>
+
+
+
+        <div class="hero-content">
+
+
+            <p class="eyebrow hero-animate">
+                YOUR JOURNEY
+            </p>
+
+
+            <h1 class="hero-animate">
+
+                <span id="destination-name">
+                    Jaipur
+                </span>
+
+                <br>
+
+                 awaits.
+
+            </h1>
+
+
+            <p class="hero-description hero-animate">
+
+                A thoughtfully arranged journey through
+                history, culture, architecture and experiences
+                that make this city unforgettable.
+
+            </p>
+
+
+
+            <div class="trip-meta hero-animate">
+
+
+                <div class="meta-item">
+
+                    <small>Duration</small>
+
+                    <strong id="trip-duration">
+                        3 Days
+                    </strong>
+
+                </div>
+
+
+
+                <div class="meta-item">
+
+                    <small>Budget</small>
+
+                    <strong id="trip-budget">
+                        ₹8,000
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="hero-bottom">
+
+            <span class="scroll-line"></span>
+
+            <span>
+                SCROLL TO EXPLORE
+            </span>
+
+        </div>
+
+
+    </header>
+
+
+
+    <!-- =====================================
+         MAIN CONTENT
+    ====================================== -->
+
+    <main>
+
+
+        <!-- INTRO -->
+
+        <section class="itinerary-intro">
+
+
+            <div>
+
+                <p class="section-label">
+                    THE JOURNEY
+                </p>
+
+
+                <h2>
+                    Your days,<br>
+                    beautifully planned.
+                </h2>
+
+            </div>
+
+
+
+            <p class="intro-text">
+
+                Every stop has been arranged to make
+                your journey feel natural, comfortable,
+                and memorable.
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- =================================
+             ITINERARY
+        ================================== -->
+
+        <div id="itinerary-container">
+
+            <!-- JavaScript will generate days here -->
+
+        </div>
+
+
+
+        <!-- =================================
+             SUMMARY
+        ================================== -->
+
+        <section class="summary-section">
+
+
+            <p class="section-label">
+                TRIP AT A GLANCE
+            </p>
+
+
+            <h2>
+                The journey,<br>
+                in numbers.
+            </h2>
+
+
+
+            <div class="stats-grid">
+
+
+                <!-- PLACES -->
+
+                <div class="stat-item">
+
+                    <span
+                        class="stat-number"
+                        id="places-count"
+                    >
+                        0
+                    </span>
+
+                    <span class="stat-label">
+                        Places
+                    </span>
+
+                </div>
+
+
+
+                <!-- DAYS -->
+
+                <div class="stat-item stat-offset">
+
+                    <span
+                        class="stat-number"
+                        id="days-count"
+                    >
+                        0
+                    </span>
+
+                    <span class="stat-label">
+                        Days
+                    </span>
+
+                </div>
+
+
+
+                <!-- BUDGET -->
+
+                <div class="stat-item">
+
+                    <span
+                        class="stat-number"
+                        id="budget-count"
+                    >
+                        ₹0
+                    </span>
+
+                    <span class="stat-label">
+                        Budget
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer>
+
+
+        <div class="footer-logo">
+            itinera
+        </div>
+
+
+        <p>
+            Every journey deserves a story.
+        </p>
+
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="results.js"></script>
+
+
+</body>
+
+</html>

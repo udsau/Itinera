@@ -1,0 +1,1071 @@
+/* ========================================
+   ROOT VARIABLES
+======================================== */
+
+:root {
+
+    --terracotta: #A94F3C;
+    --terracotta-dark: #7F382B;
+
+    --sandstone: #E8D6B8;
+    --cream: #F7F1E7;
+
+    --deep-teal: #174A4A;
+
+    --gold: #C9963E;
+    --gold-light: #F2E0A7;
+
+    --ink: #27231F;
+    --muted: #6F675D;
+
+    --white: #FFFDF8;
+
+    --border: rgba(39, 35, 31, 0.10);
+
+    --display-font: "Playfair Display", serif;
+    --body-font: "DM Sans", sans-serif;
+
+}
+
+
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: var(--body-font);
+
+    background: var(--cream);
+
+    color: var(--ink);
+
+    overflow-x: hidden;
+
+}
+
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+/* ========================================
+   DECORATIVE BACKGROUND
+======================================== */
+
+.jali-pattern {
+
+    position: fixed;
+
+    width: 300px;
+    height: 300px;
+
+    right: -100px;
+    top: 55%;
+
+    opacity: 0.06;
+
+    background-image:
+        radial-gradient(
+            circle,
+            var(--deep-teal) 2px,
+            transparent 2px
+        );
+
+    background-size: 22px 22px;
+
+    transform: rotate(15deg);
+
+    pointer-events: none;
+
+    z-index: -1;
+
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+
+    min-height: 85vh;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--deep-teal),
+            #123838,
+            #0D2A2A
+        );
+
+    color: var(--cream);
+
+    padding: 25px 8vw 35px;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 50%;
+
+    right: -100px;
+    bottom: 30px;
+
+}
+
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.logo {
+
+    font-family: var(--display-font);
+
+    font-size: 28px;
+
+    font-weight: 600;
+
+}
+
+
+.logo span {
+    color: var(--gold);
+}
+
+
+/* ========================================
+   HERO CONTENT
+======================================== */
+
+.hero-content {
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.eyebrow {
+
+    color: var(--gold);
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    font-weight: 700;
+
+    margin-bottom: 18px;
+
+}
+
+
+.hero h1 {
+
+    font-family: var(--display-font);
+
+    font-size: clamp(50px, 8vw, 100px);
+
+    line-height: 1.05;
+
+    font-weight: 600;
+
+}
+
+
+.hero h1 span {
+    color: var(--sandstone);
+}
+
+
+.hero-description {
+
+    margin-top: 25px;
+
+    max-width: 500px;
+
+    color: rgba(247,241,231,0.72);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ========================================
+   TRIP META
+======================================== */
+
+.trip-meta {
+
+    display: flex;
+
+    gap: 40px;
+
+    margin-top: 38px;
+
+}
+
+
+.meta-item {
+
+    padding-left: 14px;
+
+    border-left: 2px solid var(--gold);
+
+}
+
+
+.meta-item small {
+
+    display: block;
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    color: rgba(255,255,255,0.5);
+
+}
+
+
+.meta-item strong {
+
+    display: block;
+
+    margin-top: 7px;
+
+    font-size: 15px;
+
+}
+
+
+/* ========================================
+   HERO BOTTOM
+======================================== */
+
+.hero-bottom {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    position: relative;
+
+    z-index: 2;
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    color: rgba(255,255,255,0.5);
+
+}
+
+
+.scroll-line {
+
+    width: 50px;
+
+    height: 1px;
+
+    background: var(--gold);
+
+}
+
+
+/* ========================================
+   HERO ANIMATION
+======================================== */
+
+.hero-animate {
+
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    animation: heroReveal 0.8s ease forwards;
+
+}
+
+
+.hero-animate:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+
+.hero-animate:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+
+.hero-animate:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+
+.hero-animate:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+
+@keyframes heroReveal {
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* ========================================
+   MAIN
+======================================== */
+
+main {
+
+    max-width: 1500px;
+
+    margin: auto;
+
+    padding: 100px 4vw;
+
+}
+
+
+/* ========================================
+   INTRO
+======================================== */
+
+.itinerary-intro {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    gap: 50px;
+
+    margin-bottom: 80px;
+
+    padding-bottom: 55px;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+.section-label {
+
+    color: var(--terracotta);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.itinerary-intro h2,
+.summary-section h2 {
+
+    font-family: var(--display-font);
+
+    font-size: clamp(38px, 5vw, 70px);
+
+    font-weight: 600;
+
+    line-height: 1.15;
+
+}
+
+
+.intro-text {
+
+    max-width: 420px;
+
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* ========================================
+   DAY SECTION
+======================================== */
+
+.day-section {
+
+    margin-bottom: 100px;
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition:
+
+        opacity 0.8s ease,
+        transform 0.8s ease;
+
+}
+
+
+.day-section.visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+/* ========================================
+   DAY HEADER
+======================================== */
+
+.day-header {
+
+    max-width: 1300px;
+
+    margin: 0 auto 30px;
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 15px;
+
+}
+
+
+.day-number {
+
+    font-family: var(--display-font);
+
+    font-size: 48px;
+
+    font-weight: 600;
+
+    color: var(--terracotta);
+
+}
+
+
+.day-text {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* ========================================
+   INDOOR DAY BANNER
+======================================== */
+
+.indoor-day-banner {
+
+    max-width: 1300px;
+
+    margin: 0 auto 25px;
+
+    background: var(--gold-light);
+
+    border-left: 3px solid var(--gold);
+
+    padding: 16px 20px;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: #72531D;
+
+}
+
+
+/* ========================================
+   PLACES LIST
+======================================== */
+
+.places-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 32px;
+
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+}
+
+
+/* ========================================
+   PLACE CARD
+======================================== */
+
+.place-card {
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 28px;
+
+    overflow: hidden;
+
+    width: 100%;
+
+    box-shadow:
+        0 10px 30px rgba(39,35,31,0.07);
+
+    transition:
+
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+
+}
+
+
+.place-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 20px 45px rgba(39,35,31,0.12);
+
+}
+
+
+/* ========================================
+   IMAGE
+======================================== */
+
+.place-image {
+
+    width: 100%;
+
+    height: 260px;
+
+    overflow: hidden;
+
+}
+
+
+.place-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform 0.5s ease;
+
+}
+
+
+.place-card:hover .place-image img {
+
+    transform: scale(1.04);
+
+}
+
+
+/* ========================================
+   PLACE CONTENT
+======================================== */
+
+.place-content {
+
+    padding: 30px;
+
+}
+
+
+.place-time {
+
+    color: var(--terracotta);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+
+.place-name {
+
+    font-family: var(--display-font);
+
+    font-size: clamp(28px, 3vw, 42px);
+
+    font-weight: 600;
+
+    margin-top: 10px;
+
+    line-height: 1.2;
+
+}
+
+
+/* ========================================
+   PLACE DETAILS
+======================================== */
+
+.place-details {
+
+    margin-top: 22px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+.detail-label {
+
+    display: block;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    color: var(--muted);
+
+}
+
+
+.detail-value {
+
+    display: block;
+
+    margin-top: 7px;
+
+    font-size: 14px;
+
+    color: var(--ink);
+
+}
+
+
+/* ========================================
+   FOOD RECOMMENDATION
+======================================== */
+
+.food-recommendation {
+
+    margin-top: 20px;
+
+    padding: 16px 18px;
+
+    background: var(--cream);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    border-radius: 14px;
+
+}
+
+
+.food-recommendation strong {
+
+    color: var(--terracotta-dark);
+
+}
+
+
+/* ========================================
+   WEATHER WARNING
+======================================== */
+
+.weather-warning {
+
+    margin-top: 18px;
+
+    padding: 16px 18px;
+
+    background: var(--gold-light);
+
+    border-left: 3px solid var(--gold);
+
+    color: #72531D;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    border-radius: 0 14px 14px 0;
+
+    animation: weatherSlide 0.6s ease both;
+
+}
+
+
+.weather-warning strong {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+}
+
+
+@keyframes weatherSlide {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(-15px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+
+/* ========================================
+   SUMMARY
+======================================== */
+
+.summary-section {
+
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding-top: 70px;
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+.stats-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 50px;
+
+}
+
+
+.stat-item {
+
+    border-top: 3px solid var(--deep-teal);
+
+    padding: 22px 14px;
+
+}
+
+
+.stat-offset {
+
+    margin-top: 30px;
+
+    border-color: var(--terracotta);
+
+}
+
+
+.stat-number {
+
+    display: block;
+
+    font-family: var(--display-font);
+
+    font-size: clamp(38px, 5vw, 58px);
+
+    font-weight: 600;
+
+    color: var(--deep-teal);
+
+}
+
+
+.stat-label {
+
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    color: var(--muted);
+
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+
+    background: var(--ink);
+
+    color: var(--cream);
+
+    padding: 60px 8vw;
+
+}
+
+
+.footer-logo {
+
+    font-family: var(--display-font);
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+
+}
+
+
+footer p {
+
+    color: rgba(255,255,255,0.55);
+
+    font-size: 13px;
+
+}
+
+
+/* ========================================
+   DESKTOP CARD LAYOUT
+======================================== */
+
+@media (min-width: 700px) {
+
+    .place-card {
+
+        display: grid;
+
+        grid-template-columns: 27% 73%;
+
+        min-height: 315px;
+
+    }
+
+
+    .place-image {
+
+        width: 100%;
+
+        height: 100%;
+
+        min-height: 315px;
+
+    }
+
+
+    .place-image img {
+
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+
+        object-position: center;
+
+    }
+
+
+    .place-content {
+
+        padding: 30px 40px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 699px) {
+
+    .hero {
+
+        min-height: 80vh;
+
+        padding: 25px 22px 35px;
+
+    }
+
+
+    main {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .itinerary-intro {
+
+        display: block;
+
+        margin-bottom: 55px;
+
+        padding-bottom: 40px;
+
+    }
+
+
+    .intro-text {
+
+        margin-top: 25px;
+
+    }
+
+
+    .day-header {
+
+        gap: 10px;
+
+    }
+
+
+    .day-number {
+
+        font-size: 38px;
+
+    }
+
+
+    .day-text {
+
+        font-size: 10px;
+
+    }
+
+
+    .stats-grid {
+
+        gap: 10px;
+
+    }
+
+
+    .stat-offset {
+
+        margin-top: 20px;
+
+    }
+
+
+    .trip-meta {
+
+        gap: 25px;
+
+    }
+
+}
