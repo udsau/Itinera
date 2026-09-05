@@ -1,0 +1,375 @@
+{
+  "rating_definition": {
+    "5_star": "4.5-5.0",
+    "4_star": "4.0-4.49",
+    "3_star": "3.0-3.99",
+    "note": "Groups use 5-point user-review ratings, not hotel/restaurant accreditation. Ratings can change."
+  },
+  "Jaipur": {
+    "5_star": [
+      {
+        "name": "Cafesa",
+        "rating": 5.0,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Primitive",
+        "rating": 5.0,
+        "cost_category": "luxury"
+      },
+      {
+        "name": "The Royal Root",
+        "rating": 5.0,
+        "cost_category": "luxury"
+      },
+      {
+        "name": "Chaandi",
+        "rating": 4.9,
+        "cost_category": "luxury"
+      },
+      {
+        "name": "Cinnamon",
+        "rating": 4.9,
+        "cost_category": "luxury"
+      },
+      {
+        "name": "Hotel Sweet Dream Restaurant",
+        "rating": 4.9,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "House Of Han",
+        "rating": 4.9,
+        "cost_category": "luxury"
+      },
+      {
+        "name": "Pakwaan Candlelight Dinner Restaurant",
+        "rating": 4.9,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Socorro",
+        "rating": 4.9,
+        "cost_category": "luxury"
+      },
+      {
+        "name": "The Verandah",
+        "rating": 4.9,
+        "cost_category": "luxury"
+      },
+      {
+        "name": "24/7 Restaurant",
+        "rating": 4.8,
+        "cost_category": "luxury"
+      },
+      {
+        "name": "Dragon House",
+        "rating": 4.8,
+        "cost_category": "premium"
+      },
+      {
+        "name": "Jeypore Cafe and Restaurant",
+        "rating": 4.8,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Mosaic",
+        "rating": 4.8,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Okra",
+        "rating": 4.8,
+        "cost_category": "luxury"
+      },
+      {
+        "name": "Saffron",
+        "rating": 4.8,
+        "cost_category": "luxury"
+      },
+      {
+        "name": "Sura - Cocktails & Cuisine",
+        "rating": 4.8,
+        "cost_category": "premium"
+      },
+      {
+        "name": "The Curry Spoon",
+        "rating": 4.8,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Suvarna Mahal",
+        "rating": 4.7,
+        "cost_category": "luxury"
+      },
+      {
+        "name": "Swapna Mahal",
+        "rating": 4.7,
+        "cost_category": "luxury"
+      },
+      {
+        "name": "The Rasikam",
+        "rating": 4.7,
+        "cost_category": "budget"
+      },
+      {
+        "name": "Ash & Nori",
+        "rating": 4.6,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Jagmag",
+        "rating": 4.6,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Marble Arch",
+        "rating": 4.6,
+        "cost_category": "luxury"
+      },
+      {
+        "name": "Mohan Mahal",
+        "rating": 4.6,
+        "cost_category": "luxury"
+      },
+      {
+        "name": "OTH Bistro & Bakers Jaipur",
+        "rating": 4.6,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Zolocrust",
+        "rating": 4.6,
+        "cost_category": "premium"
+      },
+      {
+        "name": "Croft House",
+        "rating": 4.5,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Kalyan Restaurant & Bar",
+        "rating": 4.5,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Monarch Restaurant",
+        "rating": 4.5,
+        "cost_category": "premium"
+      },
+      {
+        "name": "Nouba Restaurant & Rooftop Lounge",
+        "rating": 4.5,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Steam",
+        "rating": 4.5,
+        "cost_category": "premium"
+      }
+    ],
+    "4_star": [
+      {
+        "name": "Dagla - The Rooftop Jaipur",
+        "rating": 4.4,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Peacock Restaurant",
+        "rating": 4.4,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Jaipur Adda",
+        "rating": 4.3,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "PESHAWRI",
+        "rating": 4.3,
+        "cost_category": "luxury"
+      },
+      {
+        "name": "Skyfall Restaurant",
+        "rating": 4.3,
+        "cost_category": "premium"
+      },
+      {
+        "name": "Chokhi Dhani - The Ethnic Village",
+        "rating": 4.2,
+        "cost_category": "premium"
+      },
+      {
+        "name": "Napoli Jaipur",
+        "rating": 4.2,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Handi restaurant jaipur",
+        "rating": 4.1,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Opera",
+        "rating": 4.1,
+        "cost_category": "mid_range"
+      }
+    ],
+    "3_star": []
+  },
+  "Varanasi": {
+    "5_star": [
+      {
+        "name": "1916 Cafe & Restaurant",
+        "rating": 4.9,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Behind Yellow Doors Diner",
+        "rating": 4.9,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Cafe green mama",
+        "rating": 4.9,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Desi Mandapam Baati Chokha Restaurant",
+        "rating": 4.9,
+        "cost_category": "budget"
+      },
+      {
+        "name": "Tadka at Ramada Plaza by Wyndham JHV Varanasi",
+        "rating": 4.8,
+        "cost_category": "premium"
+      },
+      {
+        "name": "Ganga's Rooftop Cafe",
+        "rating": 4.7,
+        "cost_category": "budget"
+      },
+      {
+        "name": "Green garden restaurant",
+        "rating": 4.7,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Kriva ~ Cafe & Fine Dining",
+        "rating": 4.7,
+        "cost_category": "premium"
+      },
+      {
+        "name": "La Casa family restaurant",
+        "rating": 4.7,
+        "cost_category": "budget"
+      },
+      {
+        "name": "Mr.Jalapenos",
+        "rating": 4.7,
+        "cost_category": "budget"
+      },
+      {
+        "name": "Sushi Cafe & Continental Restaurant",
+        "rating": 4.7,
+        "cost_category": "budget"
+      },
+      {
+        "name": "THE ROYAL RASOI BANARAS",
+        "rating": 4.7,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Golden Hour Multi Cuisine Restaurant",
+        "rating": 4.6,
+        "cost_category": "budget"
+      },
+      {
+        "name": "Shree Shivay Thali Dining Varanasi",
+        "rating": 4.6,
+        "cost_category": "premium"
+      },
+      {
+        "name": "Mangi Ferra Cafe",
+        "rating": 4.5,
+        "cost_category": "mid_range"
+      }
+    ],
+    "4_star": [
+      {
+        "name": "Aum Cafe",
+        "rating": 4.4,
+        "cost_category": "budget"
+      },
+      {
+        "name": "Open Hand Shop & Cafe",
+        "rating": 4.3,
+        "cost_category": "budget"
+      },
+      {
+        "name": "Shree Cafe",
+        "rating": 4.3,
+        "cost_category": "budget"
+      },
+      {
+        "name": "Baati Chokha Restaurant",
+        "rating": 4.2,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Brown Bread Bakery",
+        "rating": 4.2,
+        "cost_category": "budget"
+      },
+      {
+        "name": "Pizzeria Vaatika Cafe",
+        "rating": 4.2,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Aman-E-Khaas",
+        "rating": 4.1,
+        "cost_category": "budget"
+      },
+      {
+        "name": "Deena Chaat Bhandar",
+        "rating": 4.1,
+        "cost_category": "budget"
+      },
+      {
+        "name": "Kerala Cafe Since 1962",
+        "rating": 4.1,
+        "cost_category": "budget"
+      },
+      {
+        "name": "Madhur Milan Cafe",
+        "rating": 4.1,
+        "cost_category": "budget"
+      },
+      {
+        "name": "Dolphin Restaurant",
+        "rating": 4.0,
+        "cost_category": "mid_range"
+      },
+      {
+        "name": "Kashi Chat Bhandar",
+        "rating": 4.0,
+        "cost_category": "budget"
+      },
+      {
+        "name": "Sri Annapurna",
+        "rating": 4.0,
+        "cost_category": "budget"
+      }
+    ],
+    "3_star": []
+  },
+  "cost_category_definition": {
+    "budget": "typically under ₹800 for 4 people",
+    "mid_range": "typically ₹800-₹2,000 for 4 people",
+    "premium": "typically ₹2,000-₹4,000 for 4 people",
+    "luxury": "typically ₹4,000+ for 4 people",
+    "note": "Approximate planning categories; actual bills vary by dishes, drinks, taxes and party size."
+  },
+  "source_note": "Expanded from current September 2026 restaurant listings and business search results. Ratings should be refreshed before production use."
+}

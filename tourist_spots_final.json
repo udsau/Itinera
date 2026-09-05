@@ -1,0 +1,462 @@
+{
+  "Jaipur": [
+    {
+      "place_name": "Amer Fort",
+      "location_type": "mixed",
+      "priority_tier": 1,
+      "popularity_rank": 1,
+      "travel_time_mins": {
+        "Hawa Mahal": 14,
+        "City Palace": 15,
+        "Jantar Mantar": 14,
+        "Jal Mahal": 10,
+        "Nahargarh Fort": 28,
+        "Albert Hall Museum": 16,
+        "Jaigarh Fort": 18,
+        "Birla Mandir": 18,
+        "Gaitore Ki Chhatriyan": 13,
+        "Patrika Gate": 29,
+        "Panna Meena ka Kund": 3
+      }
+    },
+    {
+      "place_name": "Hawa Mahal",
+      "location_type": "mixed",
+      "priority_tier": 1,
+      "popularity_rank": 2,
+      "travel_time_mins": {
+        "Amer Fort": 12,
+        "City Palace": 2,
+        "Jantar Mantar": 2,
+        "Jal Mahal": 6,
+        "Nahargarh Fort": 27,
+        "Albert Hall Museum": 4,
+        "Jaigarh Fort": 18,
+        "Birla Mandir": 6,
+        "Gaitore Ki Chhatriyan": 5,
+        "Patrika Gate": 16,
+        "Panna Meena ka Kund": 12
+      }
+    },
+    {
+      "place_name": "City Palace",
+      "location_type": "mixed",
+      "priority_tier": 1,
+      "popularity_rank": 3,
+      "travel_time_mins": {
+        "Amer Fort": 14,
+        "Hawa Mahal": 2,
+        "Jantar Mantar": 0,
+        "Jal Mahal": 7,
+        "Nahargarh Fort": 29,
+        "Albert Hall Museum": 4,
+        "Jaigarh Fort": 19,
+        "Birla Mandir": 6,
+        "Gaitore Ki Chhatriyan": 6,
+        "Patrika Gate": 17,
+        "Panna Meena ka Kund": 13
+      }
+    },
+    {
+      "place_name": "Jantar Mantar",
+      "location_type": "outdoor",
+      "priority_tier": 1,
+      "popularity_rank": 4,
+      "travel_time_mins": {
+        "Amer Fort": 13,
+        "Hawa Mahal": 2,
+        "City Palace": 0,
+        "Jal Mahal": 7,
+        "Nahargarh Fort": 28,
+        "Albert Hall Museum": 5,
+        "Jaigarh Fort": 19,
+        "Birla Mandir": 7,
+        "Gaitore Ki Chhatriyan": 6,
+        "Patrika Gate": 17,
+        "Panna Meena ka Kund": 13
+      }
+    },
+    {
+      "place_name": "Jal Mahal",
+      "location_type": "outdoor",
+      "priority_tier": 2,
+      "popularity_rank": 5,
+      "travel_time_mins": {
+        "Amer Fort": 10,
+        "Hawa Mahal": 5,
+        "City Palace": 6,
+        "Jantar Mantar": 6,
+        "Nahargarh Fort": 25,
+        "Albert Hall Museum": 8,
+        "Jaigarh Fort": 16,
+        "Birla Mandir": 10,
+        "Gaitore Ki Chhatriyan": 5,
+        "Patrika Gate": 20,
+        "Panna Meena ka Kund": 10
+      }
+    },
+    {
+      "place_name": "Nahargarh Fort",
+      "location_type": "mixed",
+      "priority_tier": 2,
+      "popularity_rank": 6,
+      "travel_time_mins": {
+        "Amer Fort": 27,
+        "Hawa Mahal": 27,
+        "City Palace": 29,
+        "Jantar Mantar": 28,
+        "Jal Mahal": 24,
+        "Albert Hall Museum": 30,
+        "Jaigarh Fort": 15,
+        "Birla Mandir": 32,
+        "Gaitore Ki Chhatriyan": 27,
+        "Patrika Gate": 42,
+        "Panna Meena ka Kund": 26
+      }
+    },
+    {
+      "place_name": "Albert Hall Museum",
+      "location_type": "indoor",
+      "priority_tier": 2,
+      "popularity_rank": 7,
+      "travel_time_mins": {
+        "Amer Fort": 15,
+        "Hawa Mahal": 3,
+        "City Palace": 4,
+        "Jantar Mantar": 4,
+        "Jal Mahal": 8,
+        "Nahargarh Fort": 30,
+        "Jaigarh Fort": 21,
+        "Birla Mandir": 3,
+        "Gaitore Ki Chhatriyan": 6,
+        "Patrika Gate": 14,
+        "Panna Meena ka Kund": 15
+      }
+    },
+    {
+      "place_name": "Jaigarh Fort",
+      "location_type": "mixed",
+      "priority_tier": 2,
+      "popularity_rank": 8,
+      "travel_time_mins": {
+        "Amer Fort": 18,
+        "Hawa Mahal": 18,
+        "City Palace": 19,
+        "Jantar Mantar": 19,
+        "Jal Mahal": 15,
+        "Nahargarh Fort": 15,
+        "Albert Hall Museum": 21,
+        "Birla Mandir": 23,
+        "Gaitore Ki Chhatriyan": 18,
+        "Patrika Gate": 33,
+        "Panna Meena ka Kund": 17
+      }
+    },
+    {
+      "place_name": "Birla Mandir",
+      "location_type": "mixed",
+      "priority_tier": 3,
+      "popularity_rank": 9,
+      "travel_time_mins": {
+        "Amer Fort": 18,
+        "Hawa Mahal": 6,
+        "City Palace": 8,
+        "Jantar Mantar": 8,
+        "Jal Mahal": 12,
+        "Nahargarh Fort": 33,
+        "Albert Hall Museum": 3,
+        "Jaigarh Fort": 24,
+        "Gaitore Ki Chhatriyan": 10,
+        "Patrika Gate": 12,
+        "Panna Meena ka Kund": 18
+      }
+    },
+    {
+      "place_name": "Gaitore Ki Chhatriyan",
+      "location_type": "outdoor",
+      "priority_tier": 3,
+      "popularity_rank": 10,
+      "travel_time_mins": {
+        "Amer Fort": 12,
+        "Hawa Mahal": 5,
+        "City Palace": 6,
+        "Jantar Mantar": 6,
+        "Jal Mahal": 6,
+        "Nahargarh Fort": 27,
+        "Albert Hall Museum": 7,
+        "Jaigarh Fort": 18,
+        "Birla Mandir": 9,
+        "Patrika Gate": 19,
+        "Panna Meena ka Kund": 12
+      }
+    },
+    {
+      "place_name": "Patrika Gate",
+      "location_type": "outdoor",
+      "priority_tier": 3,
+      "popularity_rank": 11,
+      "travel_time_mins": {
+        "Amer Fort": 27,
+        "Hawa Mahal": 15,
+        "City Palace": 16,
+        "Jantar Mantar": 16,
+        "Jal Mahal": 20,
+        "Nahargarh Fort": 42,
+        "Albert Hall Museum": 13,
+        "Jaigarh Fort": 33,
+        "Birla Mandir": 10,
+        "Gaitore Ki Chhatriyan": 18,
+        "Panna Meena ka Kund": 27
+      }
+    },
+    {
+      "place_name": "Panna Meena ka Kund",
+      "location_type": "outdoor",
+      "priority_tier": 3,
+      "popularity_rank": 12,
+      "travel_time_mins": {
+        "Amer Fort": 2,
+        "Hawa Mahal": 12,
+        "City Palace": 13,
+        "Jantar Mantar": 13,
+        "Jal Mahal": 9,
+        "Nahargarh Fort": 26,
+        "Albert Hall Museum": 15,
+        "Jaigarh Fort": 17,
+        "Birla Mandir": 17,
+        "Gaitore Ki Chhatriyan": 12,
+        "Patrika Gate": 27
+      }
+    }
+  ],
+  "Varanasi": [
+    {
+      "place_name": "Kashi Vishwanath Temple",
+      "location_type": "indoor",
+      "priority_tier": 1,
+      "popularity_rank": 1,
+      "travel_time_mins": {
+        "Dashashwamedh Ghat": 2,
+        "Sarnath": 11,
+        "Assi Ghat": 9,
+        "Manikarnika Ghat": 2,
+        "Sankat Mochan Hanuman Temple": 7,
+        "Banaras Hindu University": 11,
+        "New Vishwanath Temple": 11,
+        "Ramnagar Fort": 9,
+        "Durga Temple": 6,
+        "Tulsi Manas Temple": 6,
+        "Bharat Mata Temple": 5
+      }
+    },
+    {
+      "place_name": "Dashashwamedh Ghat",
+      "location_type": "outdoor",
+      "priority_tier": 1,
+      "popularity_rank": 2,
+      "travel_time_mins": {
+        "Kashi Vishwanath Temple": 2,
+        "Sarnath": 13,
+        "Assi Ghat": 10,
+        "Manikarnika Ghat": 4,
+        "Sankat Mochan Hanuman Temple": 7,
+        "Banaras Hindu University": 12,
+        "New Vishwanath Temple": 11,
+        "Ramnagar Fort": 10,
+        "Durga Temple": 6,
+        "Tulsi Manas Temple": 6,
+        "Bharat Mata Temple": 6
+      }
+    },
+    {
+      "place_name": "Sarnath",
+      "location_type": "mixed",
+      "priority_tier": 1,
+      "popularity_rank": 3,
+      "travel_time_mins": {
+        "Kashi Vishwanath Temple": 11,
+        "Dashashwamedh Ghat": 13,
+        "Assi Ghat": 18,
+        "Manikarnika Ghat": 12,
+        "Sankat Mochan Hanuman Temple": 16,
+        "Banaras Hindu University": 20,
+        "New Vishwanath Temple": 20,
+        "Ramnagar Fort": 18,
+        "Durga Temple": 15,
+        "Tulsi Manas Temple": 15,
+        "Bharat Mata Temple": 12
+      }
+    },
+    {
+      "place_name": "Assi Ghat",
+      "location_type": "outdoor",
+      "priority_tier": 1,
+      "popularity_rank": 4,
+      "travel_time_mins": {
+        "Kashi Vishwanath Temple": 9,
+        "Dashashwamedh Ghat": 9,
+        "Sarnath": 19,
+        "Manikarnika Ghat": 10,
+        "Sankat Mochan Hanuman Temple": 3,
+        "Banaras Hindu University": 10,
+        "New Vishwanath Temple": 10,
+        "Ramnagar Fort": 7,
+        "Durga Temple": 6,
+        "Tulsi Manas Temple": 6,
+        "Bharat Mata Temple": 11
+      }
+    },
+    {
+      "place_name": "Manikarnika Ghat",
+      "location_type": "outdoor",
+      "priority_tier": 2,
+      "popularity_rank": 5,
+      "travel_time_mins": {
+        "Kashi Vishwanath Temple": 3,
+        "Dashashwamedh Ghat": 5,
+        "Sarnath": 12,
+        "Assi Ghat": 11,
+        "Sankat Mochan Hanuman Temple": 9,
+        "Banaras Hindu University": 13,
+        "New Vishwanath Temple": 13,
+        "Ramnagar Fort": 11,
+        "Durga Temple": 8,
+        "Tulsi Manas Temple": 8,
+        "Bharat Mata Temple": 7
+      }
+    },
+    {
+      "place_name": "Sankat Mochan Hanuman Temple",
+      "location_type": "mixed",
+      "priority_tier": 2,
+      "popularity_rank": 6,
+      "travel_time_mins": {
+        "Kashi Vishwanath Temple": 7,
+        "Dashashwamedh Ghat": 7,
+        "Sarnath": 16,
+        "Assi Ghat": 3,
+        "Manikarnika Ghat": 9,
+        "Banaras Hindu University": 8,
+        "New Vishwanath Temple": 7,
+        "Ramnagar Fort": 4,
+        "Durga Temple": 3,
+        "Tulsi Manas Temple": 3,
+        "Bharat Mata Temple": 8
+      }
+    },
+    {
+      "place_name": "Banaras Hindu University",
+      "location_type": "mixed",
+      "priority_tier": 2,
+      "popularity_rank": 7,
+      "travel_time_mins": {
+        "Kashi Vishwanath Temple": 12,
+        "Dashashwamedh Ghat": 12,
+        "Sarnath": 21,
+        "Assi Ghat": 11,
+        "Manikarnika Ghat": 13,
+        "Sankat Mochan Hanuman Temple": 8,
+        "New Vishwanath Temple": 1,
+        "Ramnagar Fort": 9,
+        "Durga Temple": 7,
+        "Tulsi Manas Temple": 8,
+        "Bharat Mata Temple": 13
+      }
+    },
+    {
+      "place_name": "New Vishwanath Temple",
+      "location_type": "indoor",
+      "priority_tier": 2,
+      "popularity_rank": 8,
+      "travel_time_mins": {
+        "Kashi Vishwanath Temple": 11,
+        "Dashashwamedh Ghat": 12,
+        "Sarnath": 21,
+        "Assi Ghat": 10,
+        "Manikarnika Ghat": 13,
+        "Sankat Mochan Hanuman Temple": 7,
+        "Banaras Hindu University": 1,
+        "Ramnagar Fort": 9,
+        "Durga Temple": 7,
+        "Tulsi Manas Temple": 8,
+        "Bharat Mata Temple": 13
+      }
+    },
+    {
+      "place_name": "Ramnagar Fort",
+      "location_type": "mixed",
+      "priority_tier": 2,
+      "popularity_rank": 9,
+      "travel_time_mins": {
+        "Kashi Vishwanath Temple": 9,
+        "Dashashwamedh Ghat": 10,
+        "Sarnath": 19,
+        "Assi Ghat": 7,
+        "Manikarnika Ghat": 11,
+        "Sankat Mochan Hanuman Temple": 5,
+        "Banaras Hindu University": 9,
+        "New Vishwanath Temple": 9,
+        "Durga Temple": 5,
+        "Tulsi Manas Temple": 6,
+        "Bharat Mata Temple": 11
+      }
+    },
+    {
+      "place_name": "Durga Temple",
+      "location_type": "indoor",
+      "priority_tier": 3,
+      "popularity_rank": 10,
+      "travel_time_mins": {
+        "Kashi Vishwanath Temple": 6,
+        "Dashashwamedh Ghat": 6,
+        "Sarnath": 15,
+        "Assi Ghat": 6,
+        "Manikarnika Ghat": 7,
+        "Sankat Mochan Hanuman Temple": 3,
+        "Banaras Hindu University": 7,
+        "New Vishwanath Temple": 7,
+        "Ramnagar Fort": 5,
+        "Tulsi Manas Temple": 2,
+        "Bharat Mata Temple": 7
+      }
+    },
+    {
+      "place_name": "Tulsi Manas Temple",
+      "location_type": "mixed",
+      "priority_tier": 3,
+      "popularity_rank": 11,
+      "travel_time_mins": {
+        "Kashi Vishwanath Temple": 6,
+        "Dashashwamedh Ghat": 6,
+        "Sarnath": 15,
+        "Assi Ghat": 6,
+        "Manikarnika Ghat": 7,
+        "Sankat Mochan Hanuman Temple": 3,
+        "Banaras Hindu University": 8,
+        "New Vishwanath Temple": 7,
+        "Ramnagar Fort": 6,
+        "Durga Temple": 2,
+        "Bharat Mata Temple": 7
+      }
+    },
+    {
+      "place_name": "Bharat Mata Temple",
+      "location_type": "indoor",
+      "priority_tier": 3,
+      "popularity_rank": 12,
+      "travel_time_mins": {
+        "Kashi Vishwanath Temple": 5,
+        "Dashashwamedh Ghat": 6,
+        "Sarnath": 12,
+        "Assi Ghat": 11,
+        "Manikarnika Ghat": 7,
+        "Sankat Mochan Hanuman Temple": 9,
+        "Banaras Hindu University": 13,
+        "New Vishwanath Temple": 13,
+        "Ramnagar Fort": 11,
+        "Durga Temple": 8,
+        "Tulsi Manas Temple": 8
+      }
+    }
+  ]
+}
