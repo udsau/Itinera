@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itinera | Your Journey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+    <div class="jali-pattern"></div>
+    <header class="hero">
+        <nav class="navbar"><div class="logo">itinera<span>.</span></div></nav>
+        <div class="hero-content">
+            <p class="eyebrow hero-animate">YOUR JOURNEY</p>
+            <h1 class="hero-animate">Discover <span id="destinationName">Loading...</span></h1>
+            <p class="hero-description hero-animate">A thoughtfully planned journey shaped around your time, interests, and travel style.</p>
+            <div class="trip-meta hero-animate">
+                <div class="meta-item"><div><small>Duration</small><strong id="tripDuration">Loading...</strong></div></div>
+                <div class="meta-item"><div><small>Budget</small><strong id="tripBudget">Loading...</strong></div></div>
+            </div>
+        </div>
+        <div class="hero-bottom"><span>YOUR ITINERARY</span><span class="scroll-line"></span></div>
+    </header>
+
+    <main>
+        <section class="itinerary-intro">
+            <div><p class="section-label">THE JOURNEY</p><h2>Your days,<br>beautifully planned.</h2></div>
+            <p class="intro-side-text">Every stop has been arranged to make your journey feel natural, comfortable, and memorable.</p>
+        </section>
+        <div id="itineraryContainer"></div>
+        <section class="summary-section">
+            <div class="summary-heading"><p class="section-label">TRIP AT A GLANCE</p><h2>The journey,<br>in numbers.</h2></div>
+            <div class="stats-grid">
+                <div class="stat-item"><span class="stat-number" id="placesCount">0</span><span class="stat-label">Places</span></div>
+                <div class="stat-item stat-offset"><span class="stat-number" id="daysCount">0</span><span class="stat-label">Days</span></div>
+                <div class="stat-item"><span class="stat-number" id="budgetCount">0</span><span class="stat-label">Budget</span></div>
+            </div>
+        </section>
+    </main>
+    <footer><div class="footer-logo">itinera.</div><p>Built for journeys that deserve more than a list of places.</p></footer>
+    <script src="result.js"></script>
+</body>
+</html>

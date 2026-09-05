@@ -1,0 +1,328 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #172033;
+}
+
+
+/* APP */
+
+.app {
+  min-height: 100vh;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 8%;
+
+  background: white;
+
+  border-bottom: 1px solid #e5e9f0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+  color: #667085;
+  cursor: pointer;
+}
+
+
+/* HERO */
+
+.hero {
+  min-height: 620px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+
+  padding: 70px 10%;
+}
+
+
+/* HERO TEXT */
+
+.hero-text {
+  max-width: 520px;
+}
+
+.tagline {
+  color: #2563eb;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  line-height: 1.05;
+
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: #2563eb;
+}
+
+.description {
+  color: #667085;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+/* TRAVEL CARD */
+
+.travel-card {
+  width: 390px;
+
+  background: white;
+
+  padding: 32px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+}
+
+.travel-card h2 {
+  font-size: 26px;
+}
+
+.card-subtitle {
+  color: #667085;
+  margin-top: 7px;
+  margin-bottom: 25px;
+}
+
+
+/* INPUT */
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  margin-bottom: 8px;
+}
+
+input,
+select {
+  width: 100%;
+
+  padding: 13px;
+
+  border: 1px solid #d8dee9;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  background: white;
+}
+
+input:focus,
+select:focus {
+  border-color: #2563eb;
+}
+
+
+/* INPUT WITH SYMBOL */
+
+.input-with-symbol {
+  display: flex;
+
+  align-items: center;
+
+  border: 1px solid #d8dee9;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.input-with-symbol span {
+  padding: 0 12px;
+
+  color: #667085;
+}
+
+.input-with-symbol input {
+  border: none;
+}
+
+
+/* BUTTON */
+
+button {
+  width: 100%;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+
+/* MESSAGE */
+
+#message {
+  text-align: center;
+
+  margin-top: 15px;
+
+  font-size: 14px;
+}
+
+
+/* DASHBOARD */
+
+.dashboard {
+  background: white;
+
+  padding: 60px 10%;
+}
+
+.dashboard h2 {
+  margin-bottom: 30px;
+
+  font-size: 30px;
+}
+
+.dashboard-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.info-box {
+  display: flex;
+
+  gap: 15px;
+
+  align-items: center;
+
+  padding: 22px;
+
+  background: #f7f9fc;
+
+  border-radius: 15px;
+}
+
+.info-box > span {
+  font-size: 28px;
+}
+
+.info-box small {
+  display: block;
+
+  color: #667085;
+
+  margin-bottom: 5px;
+}
+
+.info-box strong {
+  font-size: 17px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+
+  .hero {
+    flex-direction: column;
+
+    padding: 50px 5%;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .travel-card {
+    width: 100%;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  
+  .dashboard-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-heading .tagline {
+  margin-bottom: 5px;
+}
+
+#tripStatus {
+  padding: 8px 15px;
+  border-radius: 20px;
+  background: #f1f5f9;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+}html {
+  height: 100%;
+  background: 50% 50% no-repeat
+    url('data:image/svg+xml,<svg viewBox="-20 -5 60 40" width="140" xmlns="http://www.w3.org/2000/svg" opacity="0.2"><path d="M1 8l11-7 11 7v8l-11 7-11-7zm0 0l11 8 11-8m0 8L12 8 1 16M12 1v7m0 8v7" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/><text x="-12" y="32" font-size="5" font-family="monospace" fill="currentColor">Built on CodePen</text></svg>');
+}
