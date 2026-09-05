@@ -1,90 +1,211 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>itinera | Plan Your Trip</title>
-  <link rel="stylesheet" href="frontend1.css">
-</head>
-<body>
-  <div class="app">
-    <nav class="navbar">
-      <div class="logo">✈️ TravelWise</div>
-      <div class="nav-links"><span>Home</span><span>Explore</span><span>About</span></div>
-    </nav>
+<div class="app">
 
-    <section class="hero">
-      <div class="hero-text">
-        <p class="tagline">SMART TRAVEL PLANNER</p>
-        <h1>Your journey,<br><span>your way.</span></h1>
-        <p class="description">Tell us your destination, budget and travel dates. We'll help you build the perfect trip.</p>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">itin<span>e</span>ra</div>
+
+    <div class="nav-links">
+      <span>Home</span>
+      <span>Explore</span>
+      <span>About</span>
+    </div>
+  </nav>
+
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+
+    <div class="hero-text">
+      <p class="tagline">SMART TRAVEL PLANNER</p>
+
+      <h1>
+        Your journey,<br>
+        <span>your way.</span>
+      </h1>
+
+      <p class="description">
+        Tell us where you want to go, when you're travelling,
+        and what you plan to spend. We'll help you put together
+        a trip that works for you.
+      </p>
+    </div>
+
+
+    <!-- TRAVEL FORM -->
+    <div class="travel-card">
+
+      <h2>Plan Your Trip</h2>
+
+      <p class="card-subtitle">
+        Enter your travel preferences to get started.
+      </p>
+
+
+      <!-- DESTINATION -->
+      <div class="input-group">
+
+        <label>Destination</label>
+
+        <select id="destination">
+
+          <option value="">Select destination</option>
+
+          <option value="Jaipur">Jaipur</option>
+          <option value="Varanasi">Varanasi</option>
+
+        </select>
+
       </div>
 
-      <div class="travel-card">
-        <h2>Plan Your Trip 🌍</h2>
-        <p class="card-subtitle">Enter your travel preferences</p>
 
-        <div class="input-group">
-          <label>📍 Destination</label>
-          <select id="destination">
-            <option value="">Select destination</option>
-            <option value="Delhi">Delhi</option>
-            <option value="Goa">Goa</option>
-            <option value="Jaipur">Jaipur</option>
-            <option value="Mumbai">Mumbai</option>
-            <option value="Kerala">Kerala</option>
-            <option value="Manali">Manali</option>
-            <option value="Kashmir">Kashmir</option>
-          </select>
+      <!-- BUDGET -->
+      <div class="input-group">
+
+        <label>Budget</label>
+
+        <div class="input-with-symbol">
+          <span>₹</span>
+
+          <input
+            type="number"
+            id="budget"
+            placeholder="Enter your budget"
+            min="1000"
+            step="1"
+          >
+
         </div>
 
-        <div class="input-group">
-          <label>💰 Budget</label>
-          <div class="input-with-symbol">
-            <span>₹</span>
-            <input type="number" id="budget" placeholder="Enter your budget" min="1000">
-          </div>
-        </div>
-
-        <div class="input-group">
-          <label>📅 Check-in Date</label>
-          <input type="date" id="checkin" required>
-        </div>
-
-        <div class="input-group">
-          <label>🏨 Stay Duration</label>
-          <div class="input-with-symbol">
-            <input type="number" id="duration" placeholder="Number of days" min="1" max="30">
-            <span>days</span>
-          </div>
-        </div>
-
-        <button id="planButton" type="button" onclick="planTrip()">
-          Plan My Trip <span>→</span>
-        </button>
-
-        <p id="message"></p>
       </div>
-    </section>
 
-    <section class="dashboard">
-      <div class="dashboard-heading">
+
+      <!-- CHECK IN -->
+      <div class="input-group">
+
+        <label>Check-in Date</label>
+
+        <input
+          type="date"
+          id="checkin"
+          required
+        >
+
+      </div>
+
+
+      <!-- DURATION -->
+      <div class="input-group">
+
+        <label>Stay Duration</label>
+
+        <div class="input-with-symbol">
+
+          <input
+            type="number"
+            id="duration"
+            placeholder="Number of days"
+            min="1"
+            max="30"
+            step="1"
+          >
+
+          <span>days</span>
+
+        </div>
+
+      </div>
+
+
+      <!-- BUTTON -->
+
+      <button id="planButton" onclick="planTrip()">
+
+        Plan My Trip
+        <span>→</span>
+
+      </button>
+
+
+      <!-- MESSAGE -->
+
+      <p id="message"></p>
+
+    </div>
+
+  </section>
+
+
+  <!-- DASHBOARD -->
+
+  <section class="dashboard">
+
+    <div class="dashboard-heading">
+
+      <div>
+        <p class="tagline">YOUR TRAVEL PLAN</p>
+        <h2>Your Trip Dashboard</h2>
+      </div>
+
+      <span id="tripStatus">Not started</span>
+
+    </div>
+
+
+    <div class="dashboard-grid">
+
+      <div class="info-box">
+
         <div>
-          <p class="tagline">YOUR TRAVEL PLAN</p>
-          <h2>Your Trip Dashboard</h2>
+          <small>Destination</small>
+          <strong id="dashDestination">—</strong>
         </div>
-        <span id="tripStatus">Not started</span>
+
       </div>
 
-      <div class="dashboard-grid">
-        <div class="info-box"><span>📍</span><div><small>Destination</small><strong id="dashDestination">—</strong></div></div>
-        <div class="info-box"><span>💰</span><div><small>Budget</small><strong id="dashBudget">—</strong></div></div>
-        <div class="info-box"><span>📅</span><div><small>Check-in</small><strong id="dashDate">—</strong></div></div>
-        <div class="info-box"><span>🏨</span><div><small>Duration</small><strong id="dashDuration">—</strong></div></div>
-      </div>
-    </section>
-  </div>
 
-  <script src="frontend1.js"></script>
-</body>
+      <div class="info-box">
+
+        <div>
+          <small>Budget</small>
+          <strong id="dashBudget">—</strong>
+        </div>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <div>
+          <small>Check-in</small>
+          <strong id="dashDate">—</strong>
+        </div>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <div>
+          <small>Duration</small>
+          <strong id="dashDuration">—</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</div><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./frontend1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+  </head>
+  <body>
+
+    <script src="./frontend1.js"></script>
+  </body>
 </html>
