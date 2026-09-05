@@ -1,22 +1,3 @@
-"""
-Your AI decision engine, v2 — rain-flag -> schedule (with swap+drop) -> meal.
-
-Reordered from the original version so each step only relies on information
-that actually exists yet: meal recommendations now attach AFTER scheduling,
-not before, which fixes the inconsistent slot bug from testing. Weather
-swapping now happens at scheduling time (where picking between alternatives
-actually makes sense), not on the flat candidate list.
-
-SETUP:
-1. pip install -q -U google-genai
-2. Set your key:  $env:GEMINI_API_KEY="your-key-here"      (Windows)
-                  export GEMINI_API_KEY="your-key-here"    (Mac/Linux)
-3. Put this file in the same folder as:
-   - tourist_spots_final.json
-   - jaipur_varanasi_restaurants_expanded.json
-4. Run: python ai_engine.py
-"""
-
 import os
 import json
 import time
@@ -26,13 +7,10 @@ client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
 
 def call_ai(system_prompt: str, input_data: dict, retries: int = 3) -> dict:
-    """Sends data to Gemini with a system prompt, returns parsed JSON.
-    Falls back gracefully if the model wraps JSON in markdown fences, and
-    retries with a longer wait specifically for quota/rate-limit errors."""
     for attempt in range(retries):
         try:
             interaction = client.interactions.create(
-                model="gemini-flash-lite-latest",  # higher free-tier quota than -latest
+                model="gemini-flash-lite-latest",
                 system_instruction=system_prompt,
                 input=json.dumps(input_data),
             )
@@ -52,13 +30,11 @@ def call_ai(system_prompt: str, input_data: dict, retries: int = 3) -> dict:
 
 
 def flatten_restaurants(city_restaurant_data: dict) -> list:
-    """Turns the 5_star/4_star/3_star buckets into one flat list."""
     return [r for tier in city_restaurant_data.values() for r in tier]
 
 
 def compute_budget_tier(total_budget: int, stay_days: int) -> str:
-    """Rough per-meal budget -> cost_category tier. Simple math, not AI."""
-    per_meal_budget = total_budget / stay_days / 2  # ~2 main meals/day
+    per_meal_budget = total_budget / stay_days / 2
     if per_meal_budget < 800:
         return "budget"
     elif per_meal_budget < 2000:
@@ -67,8 +43,6 @@ def compute_budget_tier(total_budget: int, stay_days: int) -> str:
         return "premium"
     return "luxury"
 
-
-# ---------- The 3 prompts, in their NEW order ----------
 
 RAIN_FLAG_PROMPT = """You are the weather-flagging step of a trip-planning pipeline. You receive a
 list of candidate places and mark which ones are risky to visit given the
@@ -125,15 +99,12 @@ Return ONLY valid JSON, no other text:
 { "itinerary": [ { "day_number": 1, "time_slot": "Morning", "place_name": "...",
 "priority_tier": 0, "weather_warning": null } ] }"""
 
+
 def enforce_priority_order(itinerary: list, flagged_places: list) -> list:
-    """Safety net, no AI involved: if the schedule kept a lower-priority place
-    while a higher-priority one got dropped, swap them in. This is a hard
-    rule (never drop tier 1 while tier 3 survives), and code enforces hard
-    rules more reliably than trusting the AI to always follow them."""
     scheduled_names = {item["place_name"] for item in itinerary}
     by_name = {p["place_name"]: p for p in flagged_places}
     unscheduled = [p for name, p in by_name.items() if name not in scheduled_names]
-    unscheduled.sort(key=lambda p: p["priority_tier"])  # best (lowest number) first
+    unscheduled.sort(key=lambda p: p["priority_tier"])
 
     for item in itinerary:
         for candidate in unscheduled:
@@ -153,15 +124,12 @@ def enforce_priority_order(itinerary: list, flagged_places: list) -> list:
 
 def attach_food_recommendations(itinerary: list, restaurants_raw: dict,
                                  budget_tier: str) -> list:
-    """Pure code, no AI call. This is just sorting/filtering, which code does
-    reliably every time -- unlike the AI, which was skipping days and picking
-    the wrong slot when this was left as a prompt."""
     cost_order = ["budget", "mid_range", "premium", "luxury"]
     max_idx = cost_order.index(budget_tier)
 
     affordable = [r for r in flatten_restaurants(restaurants_raw)
                   if cost_order.index(r["cost_category"]) <= max_idx]
-    affordable.sort(key=lambda r: -r["rating"])  # best-rated first
+    affordable.sort(key=lambda r: -r["rating"])
 
     used_restaurant_names = set()
     days = sorted(set(item["day_number"] for item in itinerary))
@@ -171,7 +139,7 @@ def attach_food_recommendations(itinerary: list, restaurants_raw: dict,
         target = next((item for item in day_items
                        if item["time_slot"] == "Afternoon"), None)
         if target is None and day_items:
-            target = day_items[0]  # fallback: no Afternoon slot that day
+            target = day_items[0]
         if target is None:
             continue
 
@@ -189,7 +157,6 @@ def attach_food_recommendations(itinerary: list, restaurants_raw: dict,
 
 def run_pipeline(places: list, restaurants_raw: dict, stay_days: int,
                   budget: int, hours_per_day: int = 8) -> dict:
-    """Runs rain-flag -> schedule -> meal, in that order."""
     step1 = call_ai(RAIN_FLAG_PROMPT, {"places": places})
 
     travel_times = {p["place_name"]: p["travel_time_mins"] for p in places}
@@ -218,7 +185,6 @@ if __name__ == "__main__":
     city = "Jaipur"
     places = all_places[city]
 
-    # fake test: pretend it's raining today, to check the rain-flag step fires
     for p in places:
         p["weather_condition"] = "rain" if p["location_type"] == "outdoor" else "clear"
 
