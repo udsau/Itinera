@@ -1,10 +1,4 @@
 {
-  "rating_definition": {
-    "5_star": "4.5-5.0",
-    "4_star": "4.0-4.49",
-    "3_star": "3.0-3.99",
-    "note": "Groups use 5-point user-review ratings, not hotel/restaurant accreditation. Ratings can change."
-  },
   "Jaipur": {
     "5_star": [
       {
@@ -363,13 +357,5 @@
       }
     ],
     "3_star": []
-  },
-  "cost_category_definition": {
-    "budget": "typically under ₹800 for 4 people",
-    "mid_range": "typically ₹800-₹2,000 for 4 people",
-    "premium": "typically ₹2,000-₹4,000 for 4 people",
-    "luxury": "typically ₹4,000+ for 4 people",
-    "note": "Approximate planning categories; actual bills vary by dishes, drinks, taxes and party size."
-  },
-  "source_note": "Expanded from current September 2026 restaurant listings and business search results. Ratings should be refreshed before production use."
+  }
 }
