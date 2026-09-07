@@ -1,74 +1,95 @@
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
+import json
 
-app = FastAPI(title="Itinera Backend 2")
+from ai_planner import run_pipeline
+from osm_map import get_places_coordinates
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+
+# --------------------------------
+# 1. LOAD YOUR DATA
+# --------------------------------
+
+with open("tourist_spots_final.json") as f:
+    all_places = json.load(f)
+
+with open("jaipur_varanasi_restaurants_expanded.json") as f:
+    all_restaurants = json.load(f)
+
+
+# --------------------------------
+# 2. USER'S TRIP INPUT
+# --------------------------------
+
+city = "Jaipur"
+stay_days = 2
+budget = 15000
+
+
+# --------------------------------
+# 3. GET PLACES FOR THAT CITY
+# --------------------------------
+
+places = all_places[city]
+restaurants = all_restaurants[city]
+
+
+# --------------------------------
+# 4. TEMPORARY WEATHER DATA
+# --------------------------------
+
+# Your teammate currently uses this
+# only for testing.
+
+for p in places:
+    p["weather_condition"] = (
+        "rain"
+        if p["location_type"] == "outdoor"
+        else "clear"
+    )
+
+
+# --------------------------------
+# 5. RUN AI
+# --------------------------------
+
+result = run_pipeline(
+    city=city,
+    places=places,
+    restaurants_raw=restaurants,
+    stay_days=stay_days,
+    budget=budget
 )
 
 
-class TripRequest(BaseModel):
-    destination: str
-    check_in_date: str
-    stay_days: int
-    budget: float
+# --------------------------------
+# 6. GET AI'S RECOMMENDED PLACES
+# --------------------------------
+
+recommended_places = result["recommended_places"]
+
+print("\nAI RECOMMENDED PLACES:")
+for place in recommended_places:
+    print("-", place)
 
 
-latest_trip = None
+# --------------------------------
+# 7. SEND PLACES TO OSM
+# --------------------------------
+
+locations = get_places_coordinates(
+    city,
+    recommended_places
+)
 
 
-@app.get("/")
-def home():
-    return {"message": "Itinera Backend 2 is running"}
+# --------------------------------
+# 8. DISPLAY COORDINATES
+# --------------------------------
 
+print("\nOSM LOCATIONS:")
 
-@app.post("/api/plan-trip")
-def plan_trip(trip: TripRequest):
-    global latest_trip
-
-    latest_trip = {
-        "destination": trip.destination,
-        "check_in_date": trip.check_in_date,
-        "stay_days": trip.stay_days,
-        "budget": trip.budget,
-    }
-
-    return {
-        "status": "success",
-        "trip": latest_trip,
-    }
-
-
-@app.get("/api/latest-trip")
-def latest_trip_endpoint():
-    if latest_trip is None:
-        return {"trip": None, "itinerary": []}
-
-    # Dummy itinerary for testing the frontend connection.
-    # Later, replace this block with Backend 1 + AI Engine output.
-    places = [
-        {
-            "day_number": 1,
-            "time_slot": "morning",
-            "place_name": "Main Landmark",
-            "priority_tier": 1,
-            "food_recommendation": "Restaurant nearby",
-            "weather_warning": "",
-            "estimated_duration": "2 hrs",
-            "location_type": "outdoor",
-            "photo_url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&q=80",
-        }
-    ]
-    return {
-        "trip": latest_trip,
-        "itinerary": places,
-    }
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+for location in locations:
+    print(
+        f"{location['name']} -> "
+        f"{location['latitude']}, "
+        f"{location['longitude']}"
+    )
