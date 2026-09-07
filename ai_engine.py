@@ -155,7 +155,7 @@ def attach_food_recommendations(itinerary: list, restaurants_raw: dict,
     return itinerary
 
 
-def run_pipeline(places: list, restaurants_raw: dict, stay_days: int,
+def run_pipeline(city: str, places: list, restaurants_raw: dict, stay_days: int,
                   budget: int, hours_per_day: int = 8) -> dict:
     step1 = call_ai(RAIN_FLAG_PROMPT, {"places": places})
 
@@ -173,7 +173,16 @@ def run_pipeline(places: list, restaurants_raw: dict, stay_days: int,
         restaurants_raw=restaurants_raw,
         budget_tier=compute_budget_tier(budget, stay_days),
     )
-    return {"itinerary": final_itinerary}
+
+    recommended_places = list(dict.fromkeys(
+        item["place_name"] for item in final_itinerary
+    ))
+
+    return {
+        "city": city,
+        "recommended_places": recommended_places,
+        "itinerary": final_itinerary,
+    }
 
 
 if __name__ == "__main__":
@@ -189,6 +198,7 @@ if __name__ == "__main__":
         p["weather_condition"] = "rain" if p["location_type"] == "outdoor" else "clear"
 
     result = run_pipeline(
+        city=city,
         places=places,
         restaurants_raw=all_restaurants[city],
         stay_days=2,
