@@ -1,3 +1,4 @@
+> *Note: Itinera is a prototype application designed to showcase intelligent API orchestration and responsive UI design.*
 # Smart Travel Planner (SIH 2026)
 
 An AI-powered web app that generates customized day-by-day travel itineraries based on budget, travel dates, destination, and real-time weather forecasts.
