@@ -25,8 +25,30 @@ An AI-powered web app that generates customized day-by-day travel itineraries ba
   * **AI_engine/**
     - `planner.py`: AI prompt logic
 
-## Team Members
-* **Team Lead:** [Udita Sau](https://github.com/udsau)
-* **Frontend Team:** [Shailaja Singh](https://github.com/sSthisi), [Sadhana Singh](https://github.com/Kikii0911)
-* **Backend Team:** [Drishti Biman Rooj](https://github.com/drishtirooj), [Prachurya Borgohain](https://github.com/Delxfy)
-* **AI Logic:** [Manav Chaudhary](https://github.com/Out1xw)
+## Preview 
+<figure>
+  <img src="C:\Users\UDITA SAU\Pictures\Screenshots\login.png" alt="Screenshot of the login page interface">
+  <figcaption>Login Page</figcaption>
+</figure>
+
+<figure>
+  <img src="C:\Users\UDITA SAU\Pictures\Screenshots\Screenshot 2026-09-09 161613.png" alt="Screenshot showing user dashboard or interface for Day 1">
+  <figcaption>Day 1</figcaption>
+</figure>
+
+<figure>
+  <img src="C:\Users\UDITA SAU\Pictures\Screenshots\Screenshot 2026-09-09 161633.png" alt="Screenshot showing user dashboard or interface for Day 2">
+  <figcaption>Day 2</figcaption>
+</figure>
+
+<figure>
+  <img src="C:\Users\UDITA SAU\Pictures\Screenshots\Screenshot 2026-09-09 161651.png" alt="Screenshot showing user dashboard or interface for Day 3">
+  <figcaption>Day 3</figcaption>
+</figure>
+
+<figure>
+  <img src="C:\Users\UDITA SAU\Pictures\Screenshots\Screenshot 2026-09-09 161713.png" alt="Alternative text description">
+  <figcaption> Day 4 </figcaption>
+</figure>
+
+
