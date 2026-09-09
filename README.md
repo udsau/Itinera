@@ -26,35 +26,40 @@ An AI-powered web app that generates customized day-by-day travel itineraries ba
     - `planner.py`: AI prompt logic
 
 ## Preview 
-<figure align="center">
+<div>
   <img width="948" height="470" alt="login" src="https://github.com/user-attachments/assets/6420d1bf-59da-4a8f-b1b6-f44a7dc25d88">
-  <figcaption><em>Login Page</em></figcaption>
-</figure>
+  <br>
+  <strong>Login Page</strong>
+</div>
 
-<br><br>
+<br>
 
-<figure align="center">
-  <img width="947" height="470" alt="Screenshot 2026-09-09 161613" src="https://github.com/user-attachments/assets/55a93197-6977-4f71-a598-3392cb19a1f0">
-  <figcaption><em>Day 1</em></figcaption>
-</figure>
+<div>
+  <img width="947" height="470" alt="Screenshot 1" src="https://github.com/user-attachments/assets/55a93197-6977-4f71-a598-3392cb19a1f0">
+  <br>
+  <strong>Day 1</strong>
+</div>
 
-<br><br>
+<br>
 
-<figure align="center">
-  <img width="947" height="470" alt="Screenshot 2026-09-09 161633" src="https://github.com/user-attachments/assets/1742bafc-23ec-4f7d-a3b2-d1c5d35b49fc">
-  <figcaption><em>Day 2</em></figcaption>
-</figure>
+<div>
+  <img width="947" height="470" alt="Screenshot 2" src="https://github.com/user-attachments/assets/1742bafc-23ec-4f7d-a3b2-d1c5d35b49fc">
+  <br>
+  <strong>Day 2</strong>
+</div>
 
-<br><br>
+<br>
 
-<figure align="center">
-  <img width="947" height="470" alt="Screenshot 2026-09-09 161651" src="https://github.com/user-attachments/assets/370a33f5-aeda-4377-83cf-6207e4b85763">
-  <figcaption><em>Day 3</em></figcaption>
-</figure>
+<div>
+  <img width="947" height="470" alt="Screenshot 3" src="https://github.com/user-attachments/assets/370a33f5-aeda-4377-83cf-6207e4b85763">
+  <br>
+  <strong>Day 3</strong>
+</div>
 
-<br><br>
+<br>
 
-<figure align="center">
-  <img width="948" height="434" alt="Screenshot 2026-09-09 161713" src="https://github.com/user-attachments/assets/ef4fd6a7-92e9-4e0b-beac-5d7a31a64c9d">
-  <figcaption><em>Day 4</em></figcaption>
-</figure>
+<div>
+  <img width="948" height="434" alt="Screenshot 4" src="https://github.com/user-attachments/assets/ef4fd6a7-92e9-4e0b-beac-5d7a31a64c9d">
+  <br>
+  <strong>Day 4</strong>
+</div>
