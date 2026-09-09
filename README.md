@@ -27,28 +27,38 @@ An AI-powered web app that generates customized day-by-day travel itineraries ba
 
 ## Preview 
 <figure>
-  <img src="C:\Users\UDITA SAU\Pictures\Screenshots\login.png" alt="Screenshot of the login page interface">
+  <img width="948" height="470" alt="login" src="https://github.com/user-attachments/assets/6420d1bf-59da-4a8f-b1b6-f44a7dc25d88">
   <figcaption>Login Page</figcaption>
 </figure>
 
+<br>
+
 <figure>
-  <img src="C:\Users\UDITA SAU\Pictures\Screenshots\Screenshot 2026-09-09 161613.png" alt="Screenshot showing user dashboard or interface for Day 1">
+  <img width="947" height="470" alt="Screenshot 2026-09-09 161613" src="https://github.com/user-attachments/assets/55a93197-6977-4f71-a598-3392cb19a1f0">
   <figcaption>Day 1</figcaption>
 </figure>
 
+<br>
+
 <figure>
-  <img src="C:\Users\UDITA SAU\Pictures\Screenshots\Screenshot 2026-09-09 161633.png" alt="Screenshot showing user dashboard or interface for Day 2">
+  <img width="947" height="470" alt="Screenshot 2026-09-09 161633" src="https://github.com/user-attachments/assets/1742bafc-23ec-4f7d-a3b2-d1c5d35b49fc">
   <figcaption>Day 2</figcaption>
 </figure>
 
+<br>
+
 <figure>
-  <img src="C:\Users\UDITA SAU\Pictures\Screenshots\Screenshot 2026-09-09 161651.png" alt="Screenshot showing user dashboard or interface for Day 3">
+  <img width="947" height="470" alt="Screenshot 2026-09-09 161651" src="https://github.com/user-attachments/assets/370a33f5-aeda-4377-83cf-6207e4b85763">
   <figcaption>Day 3</figcaption>
 </figure>
 
+<br>
+
 <figure>
-  <img src="C:\Users\UDITA SAU\Pictures\Screenshots\Screenshot 2026-09-09 161713.png" alt="Alternative text description">
-  <figcaption> Day 4 </figcaption>
+  <img width="948" height="434" alt="Screenshot 2026-09-09 161713" src="https://github.com/user-attachments/assets/ef4fd6a7-92e9-4e0b-beac-5d7a31a64c9d">
+  <figcaption>Day 4</figcaption>
 </figure>
+
+
 
 
